@@ -42,16 +42,13 @@ def generate_attachment(which="WDEM"):
 
 def load_file(path, which=None):
     # loads the Excel report to memory
-    if which == "WDEM":
-        try:
+    try:
+        if which == "WDEM":
             report = pd.read_excel(path, skiprows=5, usecols=[0, 1, 2, 4, 5, 6, 7, 8, 9])
-        except Exception as e:
-            print(e)
-    elif which == "CRC":
-        try:
+        elif which == "CRC":
             report = pd.read_csv(path)
-        except Exception as e:
-            print(e)
+    except Exception as e:
+        print(e)
     return report
 
 
