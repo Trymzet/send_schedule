@@ -36,6 +36,7 @@ def prepare_email(which):
 
 
 generate_attachment(which="WDEM")
+generate_attachment(which="CRC")
 
 WDEM_email = prepare_email("WDEM")
 CRC_email = prepare_email("CRC")
