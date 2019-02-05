@@ -1,2 +1,2 @@
 # send_schedule
-Automating preparing and sending the everyday schedule to my team.
+Automating the preparation and sending daily schedule to my team.
